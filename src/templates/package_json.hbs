@@ -1,0 +1,28 @@
+{
+  "name": "{{projectName}}",
+  "version": "0.0.1",
+  "description": "",
+  "packageManager": "pnpm@9.4.0",
+  "scripts": {
+    "ready": "cp -r -f .vscode-{{projectName}}/. .vscode/",
+    "f": "pnpm --filter",
+    "syncpack": "syncpack",
+    "checkout": "node scripts/workspace-checkout.js",
+    "dev": "node scripts/dev-server.js",
+    "dev:all": "turbo run dev",
+    "build": "turbo run build",
+    "start:prod": "turbo run start:prod"
+  },
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^{{dependecies.dotenv}}",
+    "dotenv-cli": "^{{dependecies.dotenvCli}}",
+    "syncpack": "^{{dependecies.syncpack}}",
+    "turbo": "^{{dependecies.turbo}}",
+    "enquirer": "^{{dependecies.enquirer}}",
+    "glob": "^{{dependecies.glob}}",
+    "sharp": "^{{dependecies.sharp}}"
+  }
+}

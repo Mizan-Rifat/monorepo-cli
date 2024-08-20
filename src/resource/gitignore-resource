@@ -1,0 +1,4 @@
+node_modules
+.vscode
+.turbo
+.DS_Store

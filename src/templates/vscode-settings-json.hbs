@@ -1,0 +1,12 @@
+{
+  "files.exclude": {
+  {{#each projects}}
+    "apps/{{this}}": false,
+  {{/each}}
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.next": true
+  },
+  "git.ignoreLimitWarning": true
+}
